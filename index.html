@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chandra Mani Kafle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Chandra Mani Kafle</h1>
+
+<nav class="actions">
+    <a href="#selected-work">Selected work</a>
+    <a href="#contact">Contact</a>
+    <a href="https://flickr.com/photos/kaflec/">Photos</a>
+</nav>
+
+<p>I am a biomedical researcher by training.</p>
+
+<p>
+I am studying functional and molecular implications of cancer-associated mutations
+in a critical tumor suppressor. Prior to this, I studied Adenovirus-induced cellular
+DNA damage response, cell cycle, and DNA replication. I have also investigated the
+efficacy of artemisinin- and lumefantrine-based combination therapy (ACT) in treating
+<i>Plasmodium falciparum</i> malaria in Nepal.
+</p>
+
+<p>
+<a href="https://www.flickr.com/photos/kaflec/25847998990/in/album-72157666431940021">
+    <img src="https://live.staticflickr.com/1488/25847998990_8e1ab79c4e_z.jpg"
+         alt="Chandra Mani Kafle"
+         loading="lazy">
+</a>
+</p>
+
+<h2 id="selected-work">Selected work</h2>
+
+<ul>
+    <li>
+        <strong>Kafle CM</strong>, Bell DW.
+        Investigation of the mechanism of PADI2 regulation by the FBXW7 tumor suppressor.
+        <i>Clinical Cancer Research</i>, 2024.
+        <a href="https://doi.org/10.1158/1557-3265.ENDO24-B007">DOI</a>
+    </li>
+
+    <li>
+        <strong>Kafle CM</strong>, Anderson AY, Prakash A, Swedik S, Bridge E.
+        An Adenovirus early region 4 deletion mutant induces G2/M arrest via ATM activation
+        and reduces mitotic marker expression.
+        <i>Virology</i>, 2021.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34626906/">PMID: 34626906</a>
+    </li>
+
+    <li>
+        Ghimire P, Rijal KR, <strong>Kafle CM</strong>, et al.
+        Efficacy of artemether-lumefantrine for treating
+        <i>Plasmodium falciparum</i> malaria in Nepal.
+        <i>Tropical Diseases, Travel Medicine and Vaccines</i>, 2018.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30123520/">PMID: 30123520</a>
+    </li>
+
+    <li>
+        <strong>Kafle CM</strong>, Ghimire S, Dhakal P, Shrestha U.
+        Identification of parasites in soil samples of vegetable fields in Bhaktapur District.
+        <i>Tribhuvan University Journal of Microbiology</i>, 2014.
+    </li>
+</ul>
+
+<h2 id="contact">Contact</h2>
+
+<p>
+Email: <a href="mailto:yourname@institution.edu">yourname@institution.edu</a><br>
+ORCID: <a href="https://orcid.org/0000-0000-0000-0000">0000-0000-0000-0000</a>
+</p>
+
+<footer>
+    © Chandra Mani Kafle
+</footer>
+
+</body>
+</html>
+🎨 style.css
+css
+Copy code
+/* This site does not need bullshit */
+
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    margin: 2rem auto;
+    max-width: 65ch;
+    padding: 0 1rem;
+    font-family: serif;
+    line-height: 1.6;
+    color: #111;
+    background: #fff;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background: #111;
+    }
+
+    a {
+        color: #8ab4f8;
+    }
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1.2rem;
+}
+
+/* Action links */
+.actions {
+    margin: 1rem 0 2rem 0;
+}
+
+.actions a {
+    display: inline-block;
+    margin-right: 0.75rem;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid currentColor;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.actions a:hover {
+    background: currentColor;
+    color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+    .actions a:hover {
+        color: #111;
+    }
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Links */
+a {
+    color: #0000ee;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Print styles (CV-friendly) */
+@media print {
+    body {
+        color: #000;
+        background: #fff;
+        max-width: none;
+    }
+
+    nav,
+    img,
+    footer {
+        display: none;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
